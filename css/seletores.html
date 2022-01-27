@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        /* *{ //todos os elementos
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* .tag{ // aplicar na classe
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* #aprovados{ // aplicar na ID
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* #aninhado > div{  // aplicar nos elementos DIV neste caso que estiverem dento do ID 
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* #aninhado section{ // Aplicar no elemneto detenminado que esta dentro do ID  
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* p + ul{  // Aplicar na UL que esta diretamente ligada( o primeiro elemento) ao elemento P
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* p ~ ul{  // Aplicar em toda UL que esta diretamente abaixo do elemento P
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* p ~ Ol{  // Aplicar em toda OL que esta diretamente abaixo do elemento P
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* [feira]{  // seletor por atributo . seleciona todos os atributos que possuem feira
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* [feira=casa]{  // seletor por atributo + valor(exato). seleciona todos os atributos que possuem feira + valor
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* [feira~=escritorio]{  // seletor por atributo + valor(aproximado). seleciona todos os atributos que contenham feira e o valor escritorio
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* [feira*=sa]{  // Aplica em todos elementos que possuem o atributo feira cujo valor possua sa
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* [feira*=sa]{  // Aplica em todos elementos que possuem o atributo feira cujo valor possua sa */
+
+        /* span:nth-child(1){ Aplicar ao primeiro filho do elemento do tipo span */
+        
+        /*section > :nth-child(even){  even = pares odd = Impares -> nchild todos os filhos do elemento*/
+        /*section > :nth-child(odd) , ul {*/
+        section > span:nth-of-type(2){
+            color: #ff0;
+            background-color: #f77;
+        }
+
+</style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    tag1
+                    <section class='tag nolabel'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+                <div class="tag">
+                    tag2
+                    <section class='tag'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+                <div class="tag">
+                    tag3
+                    <section class='tag'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

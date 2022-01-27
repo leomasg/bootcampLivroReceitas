@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #02</title>
+    <style>
+        /* ... */
+        .fora{
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+        .dentro{
+            position:static ; /* conteudo */
+            position:relative ; /* conteudo */
+            position:absolute ; /* conteudo + Paddin */
+            position:fixed ; /* o width será baseado no tamanho da viewPort */
+            background-color: mediumvioletred;
+            height: 100px;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="fora">
+        <div class="dentro"></div>
+    </div>
+</body>
+</html>

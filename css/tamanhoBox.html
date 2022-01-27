@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho Box</title>
+    <style>
+        *{
+            /*box-sizing: border-box;*/ /*ajusta os tamanhos de margin , border , paddim e contetudo para o height desejado . somando tudo dará 300px neste caso */
+            box-sizing: content-box; /* irá aplicar conforme esta especificado no css , não ajustando o conteudo */
+        }
+
+        body {
+            font-size: 45px;
+            margin:0px;
+        }
+
+        div{
+            background-color: deepskyblue;
+            width: 100%;
+            height: 300px;
+            padding: 100px;
+            border:solid 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        O tamanho do Box é...
+    </div>
+</body>
+</html>
